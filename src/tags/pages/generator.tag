@@ -29,9 +29,10 @@
     }
 
     this.on('mount', async () => {
-      this.refs.wave.scrollIntoView()
+      if (this.refs.wave) {
+        this.refs.wave.scrollIntoView()
+      }
       this.image = await Promise.all([this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc(), this.getRandomDoc()])
-      console.log(this.image)
       this.loading = false
       this.update()
     })
