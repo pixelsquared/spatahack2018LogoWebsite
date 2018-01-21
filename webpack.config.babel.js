@@ -100,7 +100,7 @@ module.exports = {
       purifyOptions: {
         info: true,
         minify: true,
-        whitelist: ['*sn-*', '*ct-*', '*ce-*', '*content*', '*[data-editable]*']
+        whitelist: ['*sn-*', '*ct-*', '*is-*']
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
