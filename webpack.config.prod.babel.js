@@ -4,7 +4,8 @@ const MinifyPlugin = require('babel-minify-webpack-plugin')
 const CommonConfig = require('./webpack.config.babel.js')
 
 module.exports = Merge(CommonConfig, {
+  devtool: 'none',
   plugins: [
-    new MinifyPlugin({}, {comments: false})
+    new MinifyPlugin()
   ]
 })
