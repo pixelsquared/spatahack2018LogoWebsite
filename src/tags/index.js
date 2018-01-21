@@ -1,4 +1,8 @@
 require('./pages')
 
-require('./app.tag')
+require('./layout')
+
+require('riot-route/tag')
 require('./pageRouter.tag')
+
+require('./app.tag')

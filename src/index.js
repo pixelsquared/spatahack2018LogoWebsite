@@ -6,6 +6,8 @@ require('./public/bulmaswatch.min.css')
 require('spinkit/css/spinkit.css')
 require('material-design-icons/iconfont/material-icons.css')
 
+require('./public/page.css')
+
 //tag files
 require('./tags')
 

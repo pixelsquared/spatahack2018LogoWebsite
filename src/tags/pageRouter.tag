@@ -3,26 +3,11 @@
     <route path="/">
       <home></home>
     </route>
-    <route path="/login">
-      <login></login>
+    <route path="/aboutUs">
+      <aboutUs></aboutUs>
     </route>
-    <route path="/admin/createPage/*">
-      <createPage></createPage>
-    </route>
-    <route path="/admin/createPage">
-      <createPage></createPage>
-    </route>
-    <route path="/admin/pages">
-      <pages></pages>
-    </route>
-    <route path="/admin/editMenu">
-      <editMenu></editMenu>
-    </route>
-    <route path="/admin/files">
-      <files></files>
-    </route>
-    <route path="/admin/viewFile/*">
-      <viewFile></viewFile>
+    <route path="/generator">
+      <generator></generator>
     </route>
     <route path="*">
       <notFound></notFound>

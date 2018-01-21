@@ -1,68 +1,47 @@
 <app>
-  <section class="hero is-primary is-medium">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </div>
-          <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
-              <a class="navbar-item">
-                About Us
-              </a>
-              <a class="navbar-item">
-                Documentation
-              </a>
-            </div>
+
+  <router>
+    <route path="/">
+      <section class="hero is-primary is-fullheight video">
+        <hero-video></hero-video>
+
+        <hero-head></hero-head>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title is-1">
+              Logo GANerator
+            </h1>
+            <h2 class="subtitle">
+              <a class="button is-large is-success" href="/generator">Generate Images</a>
+            </h2>
           </div>
         </div>
-      </nav>
-    </div>
+        <hero-foot></hero-foot>
+      </section>
+    </route>
+    <route path="*">
+      <section class="hero is-primary">
 
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title">
-          Logo Generator
-        </h1>
-        <h2 class="subtitle"></h2>
-      </div>
-    </div>
+        <hero-head></hero-head>
 
-    <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot">
-      <nav class="tabs">
-        <div class="container">
-          <ul>
-            <li class="is-active">
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Modifiers</a>
-            </li>
-            <li>
-              <a>Grid</a>
-            </li>
-            <li>
-              <a>Elements</a>
-            </li>
-            <li>
-              <a>Components</a>
-            </li>
-            <li>
-              <a>Layout</a>
-            </li>
-          </ul>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title is-1">
+              Logo GANerator
+            </h1>
+            <h2 class="subtitle">
+              <a class="button is-large is-success" href="/generator">Generate Images</a>
+            </h2>
+          </div>
         </div>
-      </nav>
-    </div>
-  </section>
+        <hero-foot></hero-foot>
+      </section>
+    </route>
+  </router>
+
   <div class="container">
     <page-router></page-router>
   </div>
